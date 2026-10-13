@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    background-color: white;
+}
+.logo {
+    background-color: black;
+    font: bold;
+}
+.nav-links {
+    color: black;
+    font: sans-serif;
+    text-align: center;
+    padding: 10;
+}
+
+nav {
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: navSlide 0.8s ease forwards;
+}
