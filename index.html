@@ -3,32 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vanta • Luxury Clothing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-     <nav>
+
+    
+    <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">V</span>
-                Vanta <span>Vanta</span>
+                Vanta <span>Luxery</span>
             </a>
             
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="shop.html">Shop</a></li>
-                <li><a href="collection.html">Collection</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            
+            <button class="book-btn" onclick="window.location.href='shop.html'">
+                <i class="fas"></i> Buy Now
+            </button>
         </div>
     </nav>
 
+    
     <section class="hero">
-        <p>Vanta / Campaign 01</p>
-        <h1 class="heading-font">WEAR YOUR IDENTITY</h1>
-        <p>Minimal design. Maximun expression</p>
-
-        <button class="shop-btn">SHOP COLLECTION -></button> 
+        <div class="hero-content">
+            <p>New Season / 2026</p>
+            <h1 class="heading-font">Latest Edit</h1>
+            
+                    <button class="search-btn" onclick="window.location.href='shop.html'">Shop Now</button>
+                </div>
+            </div>
+        </div>
     </section>
+
+    
+
+    
+    <section class="section">
+        <h2 class="section-title heading-font">Featured Clothing</h2>
+        <div class="shop-grid">
+            <div class="dest-card" onclick="window.location.href='shop.html'">
+                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/2d2cc537-f77c-4f30-a84f-ad045e7f914c/JA+M+NK+14IN+SHORT+WAF.png" alt="Hoddie">
+                <div class="dest-content">
+                    <h3>Hoddie</h3>
+                    <p>Great For Winter</p>
+                    <div class="price-row">
+                        <div><small>From</small><br><span class="price">$90</span></div>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dest-card" onclick="window.location.href='shop'">
+                <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/u_9ddf04c7-2a9a-4d76-add1-d15af8f0263d,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/22860c98-b8c4-4779-99f0-893399c1dc00/M+NK+TCH+FLC+FZ+WR+HOODIE.png" alt="NIke Tech">
+                <div class="dest-content">
+                    <h3>Nike Tech</h3>
+                    <p>Fresh and Smooth</p>
+                    <div class="price-row">
+                        <div><small>From</small><br><span class="price">$120</span></div>
+                        <button class="btn-primary">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="footer-left">
+    © 2026 Vanta Luxery Co. All rights reserved.
+  </div>
+
+  <div class="footer-right">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </div>
+</footer>
+
 </body>
 </html>
