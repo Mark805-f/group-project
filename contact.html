@@ -30,7 +30,7 @@
             
             <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:2rem; margin-top:3rem;">
                 <div>
-                    <i class="fas fa-phone fa-2x" style="color:var(--primary);"></i>
+                    <i class="fas fa-phone fa-2x" style="color:var(--primary);" onclick="alert('You have contacted us')"></i>
                     <h3>+1 (555) 123-4567</h3>
                     <p>24/7 Support</p>
                 </div>
@@ -42,8 +42,8 @@
             </div>
 
             <form style="margin-top:3rem;">
-                <input type="text" placeholder="Your Name" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;">
-                <input type="email" placeholder="Email Address" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;">
+                <input type="text" placeholder="Your Name" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;" id="name">
+                <input type="email" placeholder="Email Address" required style="width:100%; padding:15px; margin:10px 0; border-radius:12px;" id="email">
                 <textarea placeholder="Tell us about your dream trip..." rows="5" style="width:100%; padding:15px; margin:10px 0; border-radius:12px;"></textarea>
                 <button type="submit"
                         style="padding:16px 40px; background:var(--primary); color:white; border:none; border-radius:9999px; font-size:1.1rem;">
@@ -52,6 +52,23 @@
             </form>
         </div>
     </section>
+
+    <form onsubmit="return validation()">
+        <div class="name-container">
+            <label for="name" id="name_label">Name:</label>
+            <input type="text" name="name" id="name">
+            <span id="name_error">Please enter a valid name</span>
+        </div>
+        <br>
+        <div class="email-container">
+            <label for="email" id="email-label">Email:</label>
+            <input type="text" name="email" id="email">
+            <span id="email_error">Please enter a valid email</span>
+        </div>
+        <button type="submit" name="submit">Send</button>
+    </form>
+
+    <script src="main-contact.js"></script>
 
 </body>
 </html>

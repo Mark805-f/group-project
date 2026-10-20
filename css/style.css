@@ -78,7 +78,7 @@ nav {
     color: var(--primary);
 }
 
-.book-btn {
+.buy-btn {
     background: var(--light);
     color: black;
     padding: 12px 28px;
@@ -89,7 +89,7 @@ nav {
     transition: all 0.3s;
 }
 
-.book-btn:hover {
+.buy-btn:hover {
     background: grey;
     transform: translateY(-2px);
 }
