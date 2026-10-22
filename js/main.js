@@ -38,7 +38,50 @@ document.addEventListener("DOMContentLoaded", function () {
         card.style.transition =
             "transform 0.3s ease, box-shadow 0.3s ease";
     });
+     const heroContent = document.querySelector(".hero-content");
 
+    if (heroContent) {
+        heroContent.classList.add(
+            "container",
+            "text-center",
+            "py-5"
+        );
+
+        const heroText = heroContent.querySelector("p");
+
+        if (heroText) {
+            heroText.classList.add(
+                "text-uppercase",
+                "fw-semibold",
+                "mb-3"
+            );
+        }
+
+        const heroHeading = heroContent.querySelector("h1");
+
+        if (heroHeading) {
+            heroHeading.classList.add(
+                "display-1",
+                "fw-bold",
+                "mb-4"
+            );
+        }
+
+    const heroButton = document.querySelector(".hero-content .search-btn");
+
+        if (heroButton) {
+        heroButton.classList.add(
+            "btn",
+            "btn-lg",
+            "btn-success",
+            "rounded-pill",
+            "px-5"
+        );
+
+    heroButton.classList.add("btn-dark");
+}
+        console.log("Bootstrap styling added to hero section.");
+    }
 
     window.addEventListener("scroll", function () {
         if (!nav) return;
@@ -248,10 +291,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (window.jQuery) {
         const $ = window.jQuery;
 
-        // Fade in the product grid.
         $(".shop-grid").hide().fadeIn(800);
 
-        // jQuery hover events.
         $(".dest-card")
             .on("mouseenter", function () {
                 $(this).find("img").stop(true).animate(
